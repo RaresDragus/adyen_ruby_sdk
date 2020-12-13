@@ -1,0 +1,9 @@
+inherit_from: ../.rubocop.yml
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"

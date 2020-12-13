@@ -1,0 +1,20 @@
+---
+default: &default
+  client_key: YOUR_CLIENT_KEY
+  client_secret: YOUR_CLIENT_SECRET
+  public_key: YOUR_PUBLIC_KEY
+  merchant_account:
+    :de: YOUR_MERCHANT_ACCOUNT_FOR_GERMANY
+    :at: YOUR_MERCHANT_ACCOUNT_FOR_AUSTRIA
+  skin_code: YOUR_SKIN_CODE
+  hmac_key: YOUR_HMAC_KEY
+  request_timeout: 10
+  endpoint:
+    :payment: https://pal-test.adyen.com/pal/servlet/Payment/v46/
+    :recurring: https://pal-test.adyen.com/pal/servlet/Recurring/v30/
+    :payout: https://pal-test.adyen.com/pal/servlet/Payout/v30/
+development:
+  <<: *default
+
+test:
+  <<: *default
